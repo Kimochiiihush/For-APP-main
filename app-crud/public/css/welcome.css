@@ -1,0 +1,44 @@
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #e79334; /* Fallback background color */
+    margin: 0 auto; /* Center the hero section horizontally */
+}
+
+.hero-image {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the hero section without stretching */
+    z-index: -1; /* Places the image behind the content */
+    margin: auto; /* Center the image */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: #e79334; /* Ensures the text color is white */
+    z-index: 1; /* Places the content above the image */
+}
+
+.footer-line {
+    border: 0;
+    height: 3px;
+    background: #000; /* Adjust the color as needed */
+    margin-bottom: 0px; /* Adjust the spacing as needed */
+}
